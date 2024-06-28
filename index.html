@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML5 Site</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .title-section {
+        padding: 20px;
+      }
+
+      header {
+        background-color: #20b3aa;
+        color: white;
+        text-align: left;
+      }
+
+      header h1 {
+        margin-bottom: 20px;
+      }
+
+      header p {
+        margin: 5px 0;
+        margin-bottom: 20px;
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+        font-style: italic;
+        font-size: 20px;
+      }
+
+      nav ul {
+        list-style: none;
+        padding-left: 0px;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        background-color: #006699;
+      }
+
+      nav ul li {
+        padding: 15px 20px;
+        border: 0.5px solid black;
+      }
+
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+      }
+
+      main {
+        padding: 20px;
+      }
+
+      article {
+        background-color: #fdd9b5;
+        margin-bottom: 20px;
+        padding: 20px;
+        border: 1px solid black;
+      }
+
+      article h4 {
+        margin-top: 0;
+      }
+
+      article ul {
+        list-style: disc;
+        margin: 10px 0;
+        padding-left: 20px;
+      }
+
+      article img {
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      .article1-content {
+        display: flex;
+        flex-direction: row;
+
+        > p {
+          width: 80%;
+        }
+
+        > ul {
+          background-color: white;
+          padding: 20px;
+          margin: 20px;
+          height: 50px;
+          border: black dashed 1px;
+        }
+      }
+      .article2 {
+        margin-bottom: 10px;
+      }
+
+      .article2-content {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .abstract-picture {
+        width: 150px;
+        padding: 10px;
+        margin-right: 20px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+      }
+
+      footer {
+        background-color: #f08080;
+        text-align: left;
+        padding: 10px 0;
+        padding-left: 20px;
+        width: 100%;
+        bottom: 0;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="title-section">
+        <h1>HTML5 Site</h1>
+        <p>Semantic HTML</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h2>Welcome to HTML5</h2>
+        <h3>Semantic Tags</h3>
+        <article>
+          <h4>Article 01</h4>
+          <div class="article1-content">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+              sollicitudin erat a quam pretium dapibus. Curabitur dignissim
+              convallis eros, ac congue ante faucibus sed. Aenean scelerisque
+              magna at neque pretium bibendum. Nulla quis ante orci, ut
+              venenatis mi. Aenean rutrum aliquet dui, sit amet viverra est
+              viverra vel. Aenean elementum ligula vitae lacus ultricies
+              gravida. Nunc adipiscing nibh quis est dignissim imperdiet ut ac
+              nisi. Integer sit amet est leo, nec lobortis tellus. Sed accumsan,
+              ligula non interdum lobortis, lectus tellus aliquam massa, sit
+              amet semper leo purus interdum ligula. Morbi ut est ut risus
+              tempor lacinia sit amet in lorem. Nullam vitae justo purus, sit
+              amet faucibus nunc. Vestibulum ante ipsum primis in faucibus orci
+              luctus et ultrices posuere cubilia Curae; Vivamus tortor augue,
+              rutrum id venenatis vitae, accumsan sodales lacus.
+            </p>
+            <ul>
+              <li>List Item 01</li>
+              <li>List Item 01</li>
+              <li>List Item 01</li>
+            </ul>
+          </div>
+        </article>
+        <article class="article2">
+          <h4>Article 02</h4>
+          <div class="article2-content">
+            <div class="abstract-picture">
+              <img src="abstract-picture.jpg" alt="Abstract picture" />
+              <span>Abstract picture</span>
+            </div>
+            <p>
+              Sed in ligula sit amet nunc dignissim sollicitudin non quis felis.
+              Integer sed augue nec velit gravida laoreet nec ac elit.
+              Vestibulum aliquet semper cursus. Phasellus a nisl mauris, sodales
+              convallis lacus. In elementum faucibus metus, quis sollicitudin
+              orci molestie et. Vestibulum ante ipsum primis in faucibus orci
+              luctus et ultrices posuere cubilia Curae; Etiam vehicula dignissim
+              lacus. Etiam sodales dolor vel neque cursus posuere. Donec sed
+              faucibus risus adipiscing. Praesent id orci nisi, in tristique
+              urna. Nulla in ligula eu lectus porttitor scelerisque. Aenean sed
+              urna ut sapien scelerisque fermentum quis id odio. Cras convallis
+              sem aliquet massa tempor fermentum. Fusce et purus nunc, eu
+              ultricies ipsum.
+            </p>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; CCTB, IST103. For learning purposes only</p>
+    </footer>
+  </body>
+</html>
